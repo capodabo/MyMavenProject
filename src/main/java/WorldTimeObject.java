@@ -1,6 +1,4 @@
-package com.json;
-
-public class ObjectParser {
+public class WorldTimeObject {
 
     private String abbreviation;
     private String client_ip;
@@ -16,6 +14,7 @@ public class ObjectParser {
     private String unixtime;
     private String utc_datetime;
     private String utc_offset;
+    private String week_number;
 
     public String getAbbreviation() {
         return abbreviation;
@@ -128,5 +127,14 @@ public class ObjectParser {
     public void setUtc_offset(String utc_offset) {
         this.utc_offset = utc_offset;
     }
+
+    public String getWeek_number() {
+        return week_number;
+    }
+
+    public void setWeek_number(String week_number) {
+        this.week_number = week_number;
+    }
+
 }
 
